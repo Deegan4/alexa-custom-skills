@@ -1,0 +1,29 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ollama brain",
+      "intents": [
+        {
+          "name": "OllamaIntent",
+          "slots": [
+            { "name": "Query", "type": "AMAZON.SearchQuery" }
+          ],
+          "samples": [
+            "ask {Query}",
+            "tell me about {Query}",
+            "what is {Query}",
+            "explain {Query}",
+            "how to {Query}",
+            "answer {Query}"
+          ]
+        },
+        { "name": "AMAZON.HelpIntent",         "samples": [] },
+        { "name": "AMAZON.CancelIntent",       "samples": [] },
+        { "name": "AMAZON.StopIntent",         "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        { "name": "AMAZON.FallbackIntent",     "samples": [] }
+      ],
+      "types": []
+    }
+  }
+}
