@@ -1,0 +1,27 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "foul mouth",
+      "intents": [
+        {
+          "name": "SwearIntent",
+          "slots": [],
+          "samples": [
+            "swear at me",
+            "give me a swear",
+            "hit me",
+            "say something",
+            "go off",
+            "let me have it"
+          ]
+        },
+        { "name": "AMAZON.HelpIntent",         "samples": [] },
+        { "name": "AMAZON.CancelIntent",       "samples": [] },
+        { "name": "AMAZON.StopIntent",         "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        { "name": "AMAZON.FallbackIntent",     "samples": [] }
+      ],
+      "types": []
+    }
+  }
+}
