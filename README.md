@@ -13,12 +13,16 @@ Collection of custom Alexa skills — each subfolder under `skills/` is a self-c
 
 Each skill conforms to the **ASK CLI v2 skill-package format**.
 
-> **Heads-up on Git-URL imports.** Every Alexa Git-URL import flow (ASK CLI templates, Alexa-Hosted clone) expects `skill-package/` at the **root** of the cloned tree. `main` here is a multi-skill collection with skills under `skills/<name>/` — that won't import directly. Use the per-skill branches below, which were produced with `git subtree split` so each branch has one skill at the repo root with full history preserved.
+> **Heads-up on Git-URL imports.** Every Alexa Git-URL import flow expects `skill-package/` at the **root** of the cloned tree. `main` here is a multi-skill collection with skills under `skills/<name>/` — that won't import directly. Use the per-skill branches below.
 >
-> | Skill | Branch | Import URL + branch |
+> The per-skill branches are stripped to the **[Alexa-Hosted skill format](https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-git-import.html)** — no `ask-resources.json` and no `apis.custom.endpoint` in `skill.json`, since Alexa-Hosted manages those itself. They're equally valid for ASK CLI self-hosted deploys.
+>
+> | Skill | Branch | URL to paste in the Console |
 > |---|---|---|
-> | foul-mouth   | `skill-foul-mouth`   | `https://github.com/Deegan4/alexa-custom-skills.git` (branch `skill-foul-mouth`) |
-> | ollama-brain | `skill-ollama-brain` | `https://github.com/Deegan4/alexa-custom-skills.git` (branch `skill-ollama-brain`) |
+> | foul-mouth   | `skill-foul-mouth`   | `https://github.com/Deegan4/alexa-custom-skills.git` |
+> | ollama-brain | `skill-ollama-brain` | `https://github.com/Deegan4/alexa-custom-skills.git` |
+>
+> In the Alexa Console, when prompted for the branch name, enter `skill-foul-mouth` or `skill-ollama-brain`.
 
 ### Prerequisites (one time)
 
