@@ -11,7 +11,14 @@ Collection of custom Alexa skills — each subfolder under `skills/` is a self-c
 
 ## Import a skill into the Alexa Developer Console
 
-Each skill conforms to the **ASK CLI v2 skill-package format**, so you can deploy it from this repo with one command after a clone.
+Each skill conforms to the **ASK CLI v2 skill-package format**.
+
+> **Heads-up on Git-URL imports.** Every Alexa Git-URL import flow (ASK CLI templates, Alexa-Hosted clone) expects `skill-package/` at the **root** of the cloned tree. `main` here is a multi-skill collection with skills under `skills/<name>/` — that won't import directly. Use the per-skill branches below, which were produced with `git subtree split` so each branch has one skill at the repo root with full history preserved.
+>
+> | Skill | Branch | Import URL + branch |
+> |---|---|---|
+> | foul-mouth   | `skill-foul-mouth`   | `https://github.com/Deegan4/alexa-custom-skills.git` (branch `skill-foul-mouth`) |
+> | ollama-brain | `skill-ollama-brain` | `https://github.com/Deegan4/alexa-custom-skills.git` (branch `skill-ollama-brain`) |
 
 ### Prerequisites (one time)
 
@@ -20,7 +27,17 @@ npm install -g ask-cli
 ask configure          # log into Amazon developer + AWS
 ```
 
-### Deploy a skill
+### Option A — ASK CLI from a per-skill branch (recommended)
+
+```bash
+ask new \
+  --template-url https://github.com/Deegan4/alexa-custom-skills.git \
+  --template-branch skill-foul-mouth        # or skill-ollama-brain
+cd <name-you-give-the-skill>
+ask deploy
+```
+
+### Option B — Clone main and cd into the subdir
 
 ```bash
 git clone https://github.com/Deegan4/alexa-custom-skills.git
