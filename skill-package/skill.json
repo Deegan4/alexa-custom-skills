@@ -5,26 +5,22 @@
       "locales": {
         "en-US": {
           "name": "Foul Mouth",
-          "summary": "Alexa with attitude. NSFW one-liners on demand.",
-          "description": "A novelty skill that responds with off-color one-liners. Say 'Alexa, open foul mouth' then 'swear at me' for a quick burn.\n\nNote: contains profanity. Intended for personal use or submission under a Mature content rating.",
-          "smallIconUri": "file://assets/images/en-US_smallIcon.png",
-          "largeIconUri": "file://assets/images/en-US_largeIcon.png",
+          "summary": "NSFW one-liner novelty skill.",
+          "description": "Responds with off-color one-liners. Say 'open foul mouth' then 'swear at me'. Contains profanity.",
           "examplePhrases": [
             "Alexa, open foul mouth",
             "Alexa, ask foul mouth to swear at me",
             "Alexa, tell foul mouth to go off"
-          ],
-          "keywords": ["humor", "novelty", "joke"]
+          ]
         }
       },
-      "isAvailableWorldwide": false,
-      "testingInstructions": "Open the skill, then say 'swear at me'. The skill should reply with one of three rotating responses. Profanity is intentional.",
-      "category": "NOVELTY"
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Open the skill, say 'swear at me'. Profanity is intentional.",
+      "category": "NOVELTY",
+      "distributionCountries": []
     },
     "apis": {
-      "custom": {
-        "interfaces": []
-      }
+      "custom": {}
     },
     "privacyAndCompliance": {
       "allowsPurchases": false,
@@ -34,8 +30,8 @@
       "containsAds": false,
       "locales": {
         "en-US": {
-          "privacyPolicyUrl": "https://example.com/privacy",
-          "termsOfUseUrl": "https://example.com/terms"
+          "privacyPolicyUrl": "",
+          "termsOfUseUrl": ""
         }
       }
     }
