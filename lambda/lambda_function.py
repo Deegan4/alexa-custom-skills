@@ -1,9 +1,31 @@
 import random
 
 SWEARS = [
+    # original three
     "Fuck yeah, what the hell do you want, you magnificent bastard?",
     "Shit, you're looking fine today.",
     "What the actual fuck is up?",
+    # insulting compliments
+    "Look at you, you beautiful disaster.",
+    "Damn, you absolute unit. What's the move?",
+    "You glorious son of a bitch, how can I help?",
+    "Well, well, well. If it isn't my favorite hot mess.",
+    "You walked in here like you own the place. I respect the hell out of that.",
+    # roasts
+    "I'd ask how you're doing, but I can see it on your face. Rough.",
+    "Bold of you to talk to me looking like that.",
+    "You've got the energy of a half-charged AirPod today.",
+    "I'm not saying you look tired, but the bags under your eyes have luggage of their own.",
+    # pep talks
+    "Listen up, you brilliant disaster — go kick today in the teeth.",
+    "Whatever it is, fuck it. You've got this.",
+    "You're a goddamn miracle and the world doesn't deserve you.",
+    "Today is going to bend the knee. Go be terrifying.",
+    # absurd
+    "I would die for you. I'd also probably trip on the way, but the intent is there.",
+    "You're like a cup of coffee that knows karate.",
+    "If overthinking burned calories you'd be a Greek statue by now.",
+    "Honestly? You're doing better than most. Bar's low, but still.",
 ]
 
 
