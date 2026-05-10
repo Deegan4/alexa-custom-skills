@@ -14,7 +14,12 @@
             "Alexa, ask ollama brain what is mars",
             "Alexa, tell ollama brain to explain quantum computing"
           ],
-          "keywords": ["llm", "ai", "ollama", "local"]
+          "keywords": [
+            "llm",
+            "ai",
+            "ollama",
+            "local"
+          ]
         }
       },
       "isAvailableWorldwide": false,
@@ -23,9 +28,6 @@
     },
     "apis": {
       "custom": {
-        "endpoint": {
-          "uri": "ask-custom-ollama-brain-default"
-        },
         "interfaces": []
       }
     },
