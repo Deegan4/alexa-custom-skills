@@ -13,16 +13,14 @@ Collection of custom Alexa skills — each subfolder under `skills/` is a self-c
 
 Each skill conforms to the **ASK CLI v2 skill-package format**.
 
-> **Heads-up on Git-URL imports.** Every Alexa Git-URL import flow expects `skill-package/` at the **root** of the cloned tree. `main` here is a multi-skill collection with skills under `skills/<name>/` — that won't import directly. Use the per-skill branches below.
+> **For Alexa Console git-URL import** (Alexa-Hosted skills), use the dedicated per-skill repos. The Console only clones the *default branch* and expects `skill-package/` + `lambda/` at the repo root, which neither `main` nor a per-skill branch on this repo can satisfy.
 >
-> The per-skill branches are stripped to the **[Alexa-Hosted skill format](https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-git-import.html)** — no `ask-resources.json` and no `apis.custom.endpoint` in `skill.json`, since Alexa-Hosted manages those itself. They're equally valid for ASK CLI self-hosted deploys.
+> | Skill | Dedicated repo URL to paste into the Alexa Console |
+> |---|---|
+> | foul-mouth   | `https://github.com/Deegan4/alexa-foul-mouth.git`   |
+> | ollama-brain | `https://github.com/Deegan4/alexa-ollama-brain.git` |
 >
-> | Skill | Branch | URL to paste in the Console |
-> |---|---|---|
-> | foul-mouth   | `skill-foul-mouth`   | `https://github.com/Deegan4/alexa-custom-skills.git` |
-> | ollama-brain | `skill-ollama-brain` | `https://github.com/Deegan4/alexa-custom-skills.git` |
->
-> In the Alexa Console, when prompted for the branch name, enter `skill-foul-mouth` or `skill-ollama-brain`.
+> Those repos are stripped to the **[Alexa-Hosted skill format](https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-git-import.html)** — no `ask-resources.json`, no `apis.custom.endpoint` in `skill.json`. Hosted manages both itself. The mirror branches `skill-foul-mouth` / `skill-ollama-brain` here exist as the source of truth for those repos.
 
 ### Prerequisites (one time)
 
