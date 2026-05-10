@@ -1,0 +1,49 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Ollama Brain",
+          "summary": "Bridge Alexa to a self-hosted Ollama LLM on your network.",
+          "description": "Routes spoken questions to an Ollama server running on your LAN and speaks the reply back. Requires the OLLAMA_URL environment variable on the Lambda pointing at a reachable Ollama /api/chat endpoint.",
+          "smallIconUri": "file://assets/images/en-US_smallIcon.png",
+          "largeIconUri": "file://assets/images/en-US_largeIcon.png",
+          "examplePhrases": [
+            "Alexa, open ollama brain",
+            "Alexa, ask ollama brain what is mars",
+            "Alexa, tell ollama brain to explain quantum computing"
+          ],
+          "keywords": ["llm", "ai", "ollama", "local"]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "distributionCountries": ["US"],
+      "distributionMode": "PRIVATE",
+      "testingInstructions": "Set OLLAMA_URL on the Lambda to a reachable Ollama /api/chat endpoint. Open the skill and ask any question.",
+      "category": "PRODUCTIVITY"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:000000000000:function:ollama-brain-skill",
+          "sourceDir": "lambda"
+        },
+        "interfaces": []
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://example.com/privacy",
+          "termsOfUseUrl": "https://example.com/terms"
+        }
+      }
+    }
+  }
+}

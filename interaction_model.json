@@ -1,8 +1,0 @@
-{
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "ollama brain",
-      "intents": [{"name": "OllamaIntent","slots": [{"name":"Query","type":"AMAZON.SearchQuery"}],"samples": ["tell me anything","what is","explain","how to"]}]
-    }
-  }
-}
