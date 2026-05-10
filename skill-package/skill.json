@@ -18,16 +18,13 @@
         }
       },
       "isAvailableWorldwide": false,
-      "distributionCountries": ["US"],
-      "distributionMode": "PRIVATE",
       "testingInstructions": "Set OLLAMA_URL on the Lambda to a reachable Ollama /api/chat endpoint. Open the skill and ask any question.",
       "category": "PRODUCTIVITY"
     },
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:000000000000:function:ollama-brain-skill",
-          "sourceDir": "lambda"
+          "uri": "ask-custom-ollama-brain-default"
         },
         "interfaces": []
       }
