@@ -23,9 +23,6 @@
     },
     "apis": {
       "custom": {
-        "endpoint": {
-          "uri": "ask-custom-foul-mouth-default"
-        },
         "interfaces": []
       }
     },
