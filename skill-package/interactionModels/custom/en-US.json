@@ -12,14 +12,125 @@
             "hit me",
             "say something",
             "go off",
-            "let me have it"
+            "let me have it",
+            "do your thing",
+            "surprise me",
+            "talk shit",
+            "talk smack",
+            "let one rip"
+          ]
+        },
+        {
+          "name": "RoastIntent",
+          "slots": [],
+          "samples": [
+            "roast me",
+            "destroy me",
+            "drag me",
+            "talk shit about me",
+            "insult me",
+            "tear me apart",
+            "burn me",
+            "cook me"
+          ]
+        },
+        {
+          "name": "PepTalkIntent",
+          "slots": [],
+          "samples": [
+            "hype me up",
+            "pep talk",
+            "give me a pep talk",
+            "motivate me",
+            "i need motivation",
+            "encourage me",
+            "i need a boost",
+            "gas me up",
+            "pump me up"
+          ]
+        },
+        {
+          "name": "ComplimentIntent",
+          "slots": [],
+          "samples": [
+            "be nice to me",
+            "compliment me",
+            "say something nice",
+            "be sweet",
+            "make me feel good",
+            "flatter me",
+            "tell me i'm hot",
+            "tell me i'm pretty"
+          ]
+        },
+        {
+          "name": "AbsurdIntent",
+          "slots": [],
+          "samples": [
+            "get weird",
+            "be weird",
+            "say something weird",
+            "go off the rails",
+            "be unhinged",
+            "be chaotic",
+            "say something random"
+          ]
+        },
+        {
+          "name": "MorningIntent",
+          "slots": [],
+          "samples": [
+            "good morning",
+            "wake me up",
+            "morning",
+            "rise and shine",
+            "i just woke up",
+            "kick start my day"
+          ]
+        },
+        {
+          "name": "LateNightIntent",
+          "slots": [],
+          "samples": [
+            "it's late",
+            "i can't sleep",
+            "late night",
+            "late night thoughts",
+            "three a m thoughts",
+            "i'm still awake",
+            "talk me down"
+          ]
+        },
+        {
+          "name": "WorkIntent",
+          "slots": [],
+          "samples": [
+            "work advice",
+            "i hate my job",
+            "i'm stressed about work",
+            "work is killing me",
+            "tell me about work",
+            "i have too many meetings"
+          ]
+        },
+        {
+          "name": "ExistentialIntent",
+          "slots": [],
+          "samples": [
+            "existential",
+            "i'm having a crisis",
+            "what does it all mean",
+            "life advice",
+            "nothing matters",
+            "give me an existential thought"
           ]
         },
         { "name": "AMAZON.HelpIntent",         "samples": [] },
         { "name": "AMAZON.CancelIntent",       "samples": [] },
         { "name": "AMAZON.StopIntent",         "samples": [] },
         { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
-        { "name": "AMAZON.FallbackIntent",     "samples": [] }
+        { "name": "AMAZON.FallbackIntent",     "samples": [] },
+        { "name": "AMAZON.RepeatIntent",       "samples": [] }
       ],
       "types": []
     }
